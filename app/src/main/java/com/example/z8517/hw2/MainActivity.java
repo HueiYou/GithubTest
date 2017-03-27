@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         if (itemThatWasClickedId == R.id.menu1) {
             Intent intent = new Intent(MainActivity.this, ChildActivity.class);
             startActivity(intent);
+            this.finish();
             return true;
         }
         return super.onOptionsItemSelected(item);
